@@ -9,7 +9,7 @@
 
 Install using Composer.
 ````
-composer require redound/phalcon-rest
+composer require libertysumy/phalcon-rest
 ````
 
 ## Boilerplate
