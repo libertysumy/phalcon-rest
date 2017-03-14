@@ -22,6 +22,7 @@ class ApiEndpoint
     protected $handlerMethod;
 
     protected $postedDataMethod = PostedDataMethods::AUTO;
+    protected $paramsDescription;
     protected $exampleResponse;
     protected $exampleRequest;
 
@@ -299,6 +300,25 @@ class ApiEndpoint
     public function getExampleResponse()
     {
         return $this->exampleResponse;
+    }
+
+    /**
+     * @param string $paramsDescription Example of the query's params
+     *
+     * @return $this
+     */
+    public function paramsDescription($paramsDescription)
+    {
+        $this->paramsDescription = $paramsDescription;
+        return $this;
+    }
+
+    /**
+     * @return string Example of the query's params
+     */
+    public function getParamsDescription()
+    {
+        return $this->paramsDescription;
     }
 
     /**

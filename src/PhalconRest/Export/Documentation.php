@@ -93,6 +93,7 @@ class Documentation extends Plugin
             $endpoint->setDescription($apiEndpoint->getDescription());
             $endpoint->setHttpMethod($apiEndpoint->getHttpMethod());
             $endpoint->setPath($apiEndpoint->getPath());
+            $endpoint->setParamsDescription($apiEndpoint->getParamsDescription());
             $endpoint->setExampleResponse($apiEndpoint->getExampleResponse());
             $endpoint->setExampleRequest($apiEndpoint->getExampleRequest());
 
